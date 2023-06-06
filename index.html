@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="get-request">
+            <button class="get-request__item posts" onclick="getRequestPosts()">Posts</button>
+            <div id="posts" class="post-request"></div>
+            <button class="get-request__item photos" onclick="getRequestPhotos()">Photos</button>
+            <div id="photos" class="post-request"></div>
+            <button class="get-request__item users" onclick="getRequestUsers()">Users</button>
+            <div id="users" class="post-request"></div>
+            <button class="get-request__item albums" onclick="getRequestAlbums()">Albums</button>
+            <div id="albums" class="post-request"></div>
+            <button class="get-request__item comments" onclick="getRequestComments()">Comments</button>
+            <div id="comments" class="post-request"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
