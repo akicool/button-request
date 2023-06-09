@@ -1,0 +1,22 @@
+@media (max-width: 450px) {
+    .container {
+        padding: 0 10px;
+    }
+    .requests {
+        flex-wrap: wrap;
+    }
+
+    .get-request {
+        order: 0;
+        padding-bottom: 10vh;
+    }
+
+    .get-request__item {
+        margin: 6px;
+        margin-top: 10px;
+    }
+
+    .post-request {
+        order: 1;
+    }
+}

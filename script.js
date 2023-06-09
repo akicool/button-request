@@ -41,18 +41,37 @@ async function getRequestComments() {;
 
 
 const getRequestItem = document.querySelectorAll('.get-request__item');
+const postRequest = document.querySelector('.post-request');
+const postRequestItem = document.querySelectorAll('.post-request__item');
+const btnClear = document.querySelector('.btn--clear');
 
 for (let i = 0; i < getRequestItem.length; i++) {
     getRequestItem[i].addEventListener('click', function() {
-        this.classList.toggle('active');
-        let postRequest = this.nextElementSibling;
-        if (postRequest.style.maxHeight) {
-            postRequest.style.maxHeight = null;
-        } else {
-            postRequest.style.maxHeight = '23px';
-        }
+        postRequestItem[i].classList.toggle('display');
+        postRequest.classList.add('active');
     })
 }
+for (let i = 0; i < postRequestItem.length; i++) {
+    btnClear.addEventListener('click', function() {
+        postRequestItem[i].classList.remove('display');
+        postRequest.classList.remove('active');
+    });
+}
+
+
+
+
+
+//const getRequestItem = document.querySelectorAll('.get-request__item');
+//const postRequest = document.querySelectorAll('.post-request');
+//
+//for (let i = 0; i < getRequestItem.length; i++) {
+//    getRequestItem[i].addEventListener('click', function() {
+//        postRequest[i].classList.toggle('active');
+//
+//    })
+//}
+
 //postFetch.addEventListener('click', function() {
 //    postFetch.innerHTML = contentPosts[0]['title']
 //});
