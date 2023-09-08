@@ -58,3 +58,24 @@ for (let i = 0; i < postRequestItem.length; i++) {
     });
 }
 
+
+
+
+
+//const getRequestItem = document.querySelectorAll('.get-request__item');
+//const postRequest = document.querySelectorAll('.post-request');
+//
+//for (let i = 0; i < getRequestItem.length; i++) {
+//    getRequestItem[i].addEventListener('click', function() {
+//        postRequest[i].classList.toggle('active');
+//
+//    })
+//}
+
+//postFetch.addEventListener('click', function() {
+//    postFetch.innerHTML = contentPosts[0]['title']
+//});
+
+//fetch('https://jsonplaceholder.typicode.com' + '/posts')
+//    .then(res => res.json())
+//    .then(data => document.getElementById('root').innerHTML = JSON.stringify(data[0]['title']));
